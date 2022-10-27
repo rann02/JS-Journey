@@ -5,7 +5,13 @@ for(var noAngkot = 1; noAngkot <= jmlAngkot; noAngkot++) {
 
     if(noAngkot <= angkotBeroperasi) {
         console.log('Angkot No. ' + noAngkot + ' beroperaasi' + ' dengan' + ' baik');
-    } else {
+    } else if(noAngkot === 8 || noAngkot === 10 ) {
+        console.log('Angkot No. ' + noAngkot + ' sedang lembur.');
+    } 
+    // else if(noAngkot == 10) {
+    //     console.log('Angkot No. ' + noAngkot + ' sedang lembur.');
+    // } 
+    else {
         console.log('Angkot No. ' + noAngkot + ' sedang' + ' tidak' + ' beroperasi');
     }
 }
